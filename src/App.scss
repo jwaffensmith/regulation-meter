@@ -1,9 +1,22 @@
 @use './sass';
 
 
-
-.footer {
-  flex-shrink: 0;
+html, body {
+  height: 100%;
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    flex-shrink: 0;
+    a {
+      padding: .5rem;
+    }
+  }
 }
 
 .App {

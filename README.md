@@ -7,8 +7,16 @@ In classrooms today, social-emotional learning has become an integral part of in
 === Technologies ===
 
 React
-Node.js
+JavaScript
+Emoji API
 Sass
 Semantic UI React
+
+=== Wireframes ===
+
+https://www.canva.com/design/DAEsVwfSvZ8/izgvSOs8ndN1l0iomSWMnA/view?utm_content=DAEsVwfSvZ8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+
+
+
 
 
