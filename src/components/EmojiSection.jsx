@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 
 class EmojiSection extends Component {
+
     render () {
         return (
             <section>
-                {this.props.emojiData}
+                <div> {this.props.emojiData[0].character} </div>
             </section>
         )
     }
 }
 
 export default EmojiSection; 
+

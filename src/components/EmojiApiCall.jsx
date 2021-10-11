@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import EmojiSection from "./EmojiSection";
 const apiKey = process.env.REACT_APP_EMOJI_API_KEY;
 const fetchEmojiUrl = `https://emoji-api.com/emojis?access_key=${apiKey}`;
 
@@ -12,19 +12,16 @@ class EmojiApiCall extends Component {
         fetch(fetchEmojiUrl)
             .then(res => res.json())
             .then(json => {
-                console.log(json);
-                // this.setState({
-                // emojiData: json.data,
-                // });
+                this.setState({
+                emojiData: json
+                });
+                console.log(this.state.emojiData[0].character)
             });
     };
 
     render() {
         return (
-            // <>
-            // <EmojiSection emojiData = {emojiData} />
-            // </>
-            <h1> hello! </h1>
+            <EmojiSection emojiData={this.state.emojiData}/>
         );
     };
 };
