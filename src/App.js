@@ -1,5 +1,6 @@
 import './App.scss';
-import Footer from './shared-components/Footer'
+import EmojiApiCall from './components/EmojiApiCall';
+import Footer from './components/shared-components/Footer'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
           <h1>
             Hello, hello!
           </h1>
+          <EmojiApiCall/>
         </header>
       <Footer/>
     </div>
