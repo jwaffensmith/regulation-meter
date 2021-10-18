@@ -3,13 +3,14 @@ import React, { Component } from "react";
 class RandomEmojiSection extends Component {
 		
 	render() {
-		const randomEmoji = this.props.emojiData[Math.floor(Math.random()*this.props.emojiData.length)] 
+        const randomEmoji = Math.floor(Math.random()*this.props.emojiData.length)
+		const emoji = this.props.emojiData[randomEmoji] 
 		return (
 			<>
-			{randomEmoji ? 
+			{emoji ? 
 			<section>
 				<div className="emoji">
-					{randomEmoji.character}
+					{emoji.character}
 				</div>
 			</section> : 
 			<>

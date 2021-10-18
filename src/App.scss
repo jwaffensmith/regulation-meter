@@ -36,6 +36,20 @@ html, body {
 
 div.emoji {
   font-size: 10rem;
+  margin: 0rem 0rem;
 }
 
+.emoji-container {
+  background-color: green;
 
+  .top-emoji {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bottom-emoji {
+    display: flex;
+    justify-content: center;
+  }
+  
+}
