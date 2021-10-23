@@ -36,13 +36,56 @@ html, body {
 
 div.emoji {
   font-size: 10rem;
-  margin: 0rem 0rem;
+  margin: 0rem;
+  padding: 0rem;
 }
 
-.quadrant {
+.fourth-quadrant {
   background-color: green;
-  .emoji-container {
+  .top-quadrant {
+    display: flex;
+    justify-content: center;
+  }
+  .right-quadrant {
     display: flex;
     justify-content: center;
   }
 }
+
+.first-quadrant {
+  background-color: yellow;
+  .top-quadrant {
+    display: flex;
+    justify-content: center;
+  }
+  .right-quadrant {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.third-quadrant {
+  background-color: green;
+  .top-quadrant {
+    display: flex;
+    justify-content: center;
+  }
+  .left-quadrant {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.second-quadrant {
+  background-color: yellow;
+  .top-quadrant {
+    display: flex;
+    justify-content: center;
+  }
+  .left-quadrant {
+    display: flex;
+    justify-content: center;
+  }
+}
+

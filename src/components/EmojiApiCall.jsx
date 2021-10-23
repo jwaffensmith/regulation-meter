@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import EmojiSection from "./EmojiSection";
+import FourthQuadrant from "./FourthQuadrant";
+import FirstQuadrant from "./FirstQuadrant";
+import ThirdQuadrant from "./ThirdQuadrant";
+import SecondQuadrant from "./SecondQuadrant";
 import RandomEmojiButton from "./RandomEmojiButton"
 import RandomEmojiSection from "./RandomEmojiSection";
 const apiKey = process.env.REACT_APP_EMOJI_API_KEY;
@@ -27,7 +30,14 @@ class EmojiApiCall extends Component {
     render() {
         return (
             <>
-            <EmojiSection emojiData={this.state.emojiData}/>
+             <section className="top-quadrants">
+                <SecondQuadrant emojiData={this.state.emojiData}/>
+                <ThirdQuadrant emojiData={this.state.emojiData}/>
+            </section>
+            <section className="bottom-quadrants">
+                <FirstQuadrant emojiData={this.state.emojiData}/>
+                <FourthQuadrant emojiData={this.state.emojiData}/>
+            </section>
             <RandomEmojiSection emojiData={this.state.emojiData}/>
             <RandomEmojiButton fetchData={this.fetchData}/>
             </>
