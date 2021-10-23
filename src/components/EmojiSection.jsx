@@ -6,22 +6,29 @@ class EmojiSection extends Component {
         return (
             <>
 			{this.props.emojiData.length > 0 ? 
-            <section className="emoji-container"> 
-            
+            <div className="quadrant">
                 <header>
                     Green Zone
                 </header>
-                <div className="top-emoji"> 
-                    <div className="emoji">{this.props.emojiData[0].character}</div>
-                    <h3>Happy</h3>
-                    <div className="emoji">{this.props.emojiData[7].character}</div>
-                    
-                </div> 
-                <div className="bottom-emoji"> 
-                    <div className="emoji">{this.props.emojiData[10].character}</div>
-                    <div className="emoji">{this.props.emojiData[8].character}</div>
-                </div> 
-            </section> :
+                <section className="emoji-container"> 
+                    <div className="top-quadrant"> 
+                        <div className="top-left-emoji"> 
+                            <div className="emoji">{this.props.emojiData[0].character}</div>
+                        </div> 
+                        <div className="top-right-emoji"> 
+                            <div className="emoji">{this.props.emojiData[0].character}</div>
+                        </div> 
+                    </div>
+                    <div className="bottom-quadrant"> 
+                        <div className="bottom-right-emoji"> 
+                            <div className="emoji">{this.props.emojiData[0].character}</div>
+                        </div> 
+                        <div className="bottom-left-emoji"> 
+                            <div className="emoji">{this.props.emojiData[10].character}</div>
+                        </div>
+                    </div> 
+                </section> 
+            </div> :
             <>
 			<p></p>
 			</>

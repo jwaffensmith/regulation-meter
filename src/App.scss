@@ -39,17 +39,10 @@ div.emoji {
   margin: 0rem 0rem;
 }
 
-.emoji-container {
+.quadrant {
   background-color: green;
-
-  .top-emoji {
+  .emoji-container {
     display: flex;
     justify-content: center;
   }
-  
-  .bottom-emoji {
-    display: flex;
-    justify-content: center;
-  }
-  
 }
